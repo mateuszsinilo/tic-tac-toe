@@ -1,0 +1,103 @@
+@font-face {
+  font-family: SF Pro Rounded;
+  src: url("SF-Pro-Rounded-Black.32ebc688.otf");
+}
+
+h1 {
+  text-align: center;
+  font-family: SF Pro Rounded, serif;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  visibility: visible;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: SF Pro Rounded, serif;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  box-shadow: 5px 5px 2px #000;
+}
+
+.x-class {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  visibility: visible;
+  background-color: #ca5146;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: SF Pro Rounded, serif;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  box-shadow: 5px 5px 2px #000;
+}
+
+.o-class {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  visibility: visible;
+  background-color: #61d362;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: SF Pro Rounded, serif;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  box-shadow: 5px 5px 2px #000;
+}
+
+.box:active {
+  transition: all .125s;
+  transform: scaleX(1.1);
+}
+
+.box:hover {
+  background-image: linear-gradient(266.3deg, #1e3986 -11.3%, #8f55a8 12.26%, #ca5146 29.62%, #f2a93c 46.72%, #f9dd4a 61.72%, #61d362 77.21%, #52b6c2 104.91%);
+}
+
+.game-container {
+  grid-template-columns: 75px 75px 75px;
+  justify-content: center;
+  gap: 20px;
+  display: grid;
+}
+
+.button-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button-x {
+  visibility: hidden;
+  color: #fff;
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+  background-image: linear-gradient(266.3deg, #1e3986 -11.3%, #8f55a8 12.26%, #ca5146 29.62%, #f2a93c 46.72%, #f9dd4a 61.72%, #61d362 77.21%, #52b6c2 104.91%);
+  border: none;
+  border-radius: 5px;
+  font-family: SF Pro Rounded, serif;
+  font-size: 20px;
+}
+
+.button-x:hover {
+  filter: drop-shadow(5px 5px #000);
+  transition: all .125s;
+  transform: scaleX(1.05);
+}
+
+.winner {
+  display: hidden;
+}
+
+/*# sourceMappingURL=index.3bf965d4.css.map */

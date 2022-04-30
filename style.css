@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'SF Pro Rounded';
+    src: url('./fonts/SF-Pro-Rounded-Black.otf');
+}
+
+h1 {
+    text-align: center;
+    font-family: 'SF Pro Rounded', serif;
+}
+.box {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #000000;
+    cursor: pointer;
+    font-size: 26px;
+    font-family: 'SF Pro Rounded', serif;
+    visibility:visible;
+}
+
+.x-class {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #000000;
+    cursor: pointer;
+    font-size: 26px;
+    font-family: 'SF Pro Rounded', serif;
+    visibility:visible;
+    background-color: #CA5146 
+}
+
+.o-class {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #000000;
+    cursor: pointer;
+    font-size: 26px;
+    font-family: 'SF Pro Rounded', serif;
+    visibility:visible;
+    background-color: #61D362;
+
+}
+
+.box:active{
+    transform: scaleX(1.1);
+    transition: all 0.125s ease 0s;
+}
+
+.box:hover{
+    background-image: linear-gradient(266.3deg, #1E3986 -11.3%, #8F55A8 12.26%, #CA5146 29.62%, #F2A93C 46.72%, #F9DD4A 61.72%, #61D362 77.21%, #52B6C2 104.91%);
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-x {
+    visibility: hidden;
+    font-family: 'SF Pro Rounded', serif;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    background-image: linear-gradient(266.3deg, #1E3986 -11.3%, #8F55A8 12.26%, #CA5146 29.62%, #F2A93C 46.72%, #F9DD4A 61.72%, #61D362 77.21%, #52B6C2 104.91%);
+}
+
+.button-x:hover {
+    filter: drop-shadow(5px 5px 0px #000000);
+    transition: all 0.125s ease 0s;
+    transform: scaleX(1.05);
+}
+
+.winner {
+    display: hidden;
+}
